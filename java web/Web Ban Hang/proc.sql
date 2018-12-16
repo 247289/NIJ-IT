@@ -61,3 +61,12 @@ EXEC dbo.InsertPhone @id_danhmuc = 1, -- int
     @anh3 = N'http://via.placeholder.com/234x300', -- nvarchar(250)
     @anh4 = N'http://via.placeholder.com/234x300' -- nvarchar(250)
 GO
+
+select * FROM tbl_sanpham
+
+EXEC InsertPhone @id_danhmuc = 1, @ten = N'check1', @gia = 1,@soluong = 1,@trongluong = N'100       ',
+@ROM = N'1GB       ',@RAM = N'4GB  ', @thenho = N'null',@camera_truoc = N'',@camera_sau = N'',
+@pin = N'', @baohanh = N'', @bluetooth = '', @id_nhasanxuat = 1, @CPU = N'', @manhinh = N'',
+ @anh1 = N'', @anh2 = N'',@anh3 = N'', @anh4 = N''
+
+ @bluetooth = ''

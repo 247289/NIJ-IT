@@ -31,13 +31,12 @@
                         <table style="width:100%;" class="table table-bordered" id="dataTable1"  cellspacing="0">
                             <tr>
                                 <td>Tên sản phẩm</td>
-                                <td><input vvalue="" type="text" name="ten"></td>
+                                <td><input value="" type="text" name="ten"></td>
                             </tr>
                             <tr>
                                 <td>Danh mục</td>
                                 <td>
-                                    <select class="require require200" onchange="filter()" id='id_dm'>
-                                        <option value="0">Tất cả</option>
+                                    <select class="require require200" onchange="filter()" name='id_dm'>
                                         <%
                                             ArrayList<DanhMuc> dm = (ArrayList<DanhMuc>) new DienThoaiDAO().GetNameDM();
                                             for (DanhMuc t : dm) {
@@ -96,8 +95,7 @@
                             <tr>
                                 <td>Hãng</td>
                                 <td>
-                                    <select class="require require200" onchange="filter()" id='id_nsx'>
-                                        <option value="0">Tất cả</option>
+                                    <select class="require require200" onchange="filter()" name='id_nsx'>
                                         <%
                                             ArrayList<NhaSanXuat> nsx = (ArrayList<NhaSanXuat>) new DienThoaiDAO().GetNameNSX();
                                             for (NhaSanXuat t : nsx) {
@@ -148,14 +146,14 @@
                             <tr>
                                 <td>Trạng thái</td>
                                 <td>
-                                    <input style="margin-left: -191px;height: 20px;" value="" type="checkbox" disabled="true">
+                                    <input style="margin-left: -191px;height: 20px;" value="" type="checkbox" name="trangthai" disabled="true">
                                 </td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td style="text-align: left" colspan="10">
-                                    <input type="submit" value="lưu" style="width: 80px">
-                                    <input type="button" onclick="return closed1()" style="width: 80px" value="hủy"/>
+                                    <input type="submit" name="luu" value="lưu" style="width: 80px">
+                                    <input type="button" name="huy" onclick="return closed1()" style="width: 80px" value="hủy"/>
                                 </td>
                             </tr>
 

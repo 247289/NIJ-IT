@@ -37,7 +37,7 @@ public class InsertPhone extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) 
         {
-            String id=request.getParameter("id");
+            //String id=request.getParameter("id");
             String ten=request.getParameter("ten");
             String danhmuc = request.getParameter("id_dm");
             String gia=request.getParameter("gia");

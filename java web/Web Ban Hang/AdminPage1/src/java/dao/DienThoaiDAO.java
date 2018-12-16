@@ -144,17 +144,18 @@ public class DienThoaiDAO {
     }
 
     public static String InsertPhone(String ten, String id_danhmuc, String gia, String soluong, String trongluong, String rom, String ram, String thenho, String ctruoc, String csau, String pin, String baohanh, String bluetooth, String id_nsx, String cpu, String manhinh, String[] ha) {
-        String sql = "exe InsertPhone @id_danhmuc = " + id_danhmuc + ", @ten = N\'" + ten + "\', @gia = " + gia + ",@soluong = " + soluong
+        String sql = "exec InsertPhone @id_danhmuc = " + id_danhmuc + ", @ten = N\'" + ten + "\', @gia = " + gia + ",@soluong = " + soluong
                 + ",@trongluong = N\'" + trongluong + "\',@ROM = N\'" + rom + "\',@RAM = N\'" + ram + "\', @thenho = N\'" + thenho + "\',@camera_truoc = N\'"
-                + ctruoc + "\',@camera_sau = N\'" + csau + "\',@pin = N\'" + pin + "\', @baohanh = N\'" + baohanh + "\', @bluetooth =" + bluetooth
-                + ", @id_nhasanxuat = " + id_nsx + ", @CPU = N\'" + cpu + "\', @manhinh = N\'" + manhinh
+                + ctruoc + "\',@camera_sau = N\'" + csau + "\',@pin = N\'" + pin + "\', @baohanh = N\'" + baohanh + "\', @bluetooth =\'" + bluetooth
+                + "\', @id_nhasanxuat = " + id_nsx + ", @CPU = N\'" + cpu + "\', @manhinh = N\'" + manhinh
                 + "\', @anh1 = N\'" + ha[0] + "\', @anh2 = N\'" + ha[1] + "\',@anh3 = N\'" + ha[2] + "\', @anh4 = N\'" + ha[3] + "'";
+        System.out.println(sql);
         Connection con = null;
         Statement state = null;
         try {
             con = DatabaseUtils.getConnection();
             state = con.createStatement();
-            state.executeQuery(sql);
+            state.executeUpdate(sql);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -167,7 +168,7 @@ public class DienThoaiDAO {
     public static List<NhaSanXuat> GetNameNSX() {
         
         ArrayList<NhaSanXuat> lstNSX = new ArrayList<NhaSanXuat>();
-        String sql = "select ten from tbl_nhasanxuat";
+        String sql = "select * from tbl_nhasanxuat";
         Connection conn = null;
         Statement state = null;
         try {
@@ -194,7 +195,7 @@ public class DienThoaiDAO {
     public static List<DanhMuc> GetNameDM() {
         
         ArrayList<DanhMuc> lstDM = new ArrayList<DanhMuc>();
-        String sql = "select ten from tbl_danhmuc";
+        String sql = "select * from tbl_danhmuc";
         Connection conn = null;
         Statement state = null;
         try {
