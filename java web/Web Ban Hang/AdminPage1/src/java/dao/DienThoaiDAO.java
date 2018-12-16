@@ -144,6 +144,7 @@ public class DienThoaiDAO {
     }
 
     public static String InsertPhone(String ten, String id_danhmuc, String gia, String soluong, String trongluong, String rom, String ram, String thenho, String ctruoc, String csau, String pin, String baohanh, String bluetooth, String id_nsx, String cpu, String manhinh, String[] ha) {
+        id_danhmuc = "1";// (^-^)
         String sql = "exec InsertPhone @id_danhmuc = " + id_danhmuc + ", @ten = N\'" + ten + "\', @gia = " + gia + ",@soluong = " + soluong
                 + ",@trongluong = N\'" + trongluong + "\',@ROM = N\'" + rom + "\',@RAM = N\'" + ram + "\', @thenho = N\'" + thenho + "\',@camera_truoc = N\'"
                 + ctruoc + "\',@camera_sau = N\'" + csau + "\',@pin = N\'" + pin + "\', @baohanh = N\'" + baohanh + "\', @bluetooth =\'" + bluetooth

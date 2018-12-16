@@ -36,7 +36,7 @@
                             <tr>
                                 <td>Danh mục</td>
                                 <td>
-                                    <select class="require require200" onchange="filter()" name='id_dm'>
+<!--                                    <select class="require require200" onchange="filter()" name='id_dm'>
                                         <%
                                             ArrayList<DanhMuc> dm = (ArrayList<DanhMuc>) new DienThoaiDAO().GetNameDM();
                                             for (DanhMuc t : dm) {
@@ -45,7 +45,8 @@
                                         <%
                                             }
                                         %>
-                                    </select>
+                                    </select>-->
+                                        <input value="Điện thoại" type="number" name="id_dm">
                                 </td>
                             </tr>
                             <tr>

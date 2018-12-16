@@ -39,7 +39,7 @@ public class InsertPhone extends HttpServlet {
         {
             //String id=request.getParameter("id");
             String ten=request.getParameter("ten");
-            String danhmuc = request.getParameter("id_dm");
+            String id_dm = request.getParameter("id_dm");
             String gia=request.getParameter("gia");
             String soluong=request.getParameter("soluong");
             String trongluong=request.getParameter("trongluong");
@@ -58,7 +58,7 @@ public class InsertPhone extends HttpServlet {
             
             //
             out.print(ha.length);
-            out.print(DienThoaiDAO.InsertPhone(ten, danhmuc, gia, soluong, trongluong, rom, ram, thenho, ctruoc, csau, pin, baohanh, bluetooth, hang, cpu, manhinh, ha));
+            out.print(DienThoaiDAO.InsertPhone(ten, id_dm, gia, soluong, trongluong, rom, ram, thenho, ctruoc, csau, pin, baohanh, bluetooth, hang, cpu, manhinh, ha));
 
             request.getServletContext().getRequestDispatcher("/dienthoai.jsp").forward(request, response);
         }
