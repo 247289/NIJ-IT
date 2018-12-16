@@ -1,0 +1,647 @@
+
+
+<!--JAVA WEB
+thay Cuong: 0983235486
+			hungcuong1306@gmail.com
+		fb: Cuong Nguyen Hung
+-->
+
+<!-- Buoi 1: Html co ban
+1. Cau truc trang html
+	<!DOCTYPE html>
+	<html>
+	<head>
+		// chua dinh nghia, style cho website
+		<title></title>
+	</head>
+	<body>
+		//chua noi dung trang web
+	</body>
+	</html>
+2. Example
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Learn Java Web</title>
+		<meta charset="utf-8">	
+	</head>
+	<body bgcolor="aqua">
+		<h1>This is h1</h1><br/>
+		<a href="https://www.w3schools.com/js/js_syntax.asp" target="_bank">This is a</a><br>
+		this is img
+		<img src="https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat.jpeg" width="300" height="200">
+		<img src="http://file.vforum.vn/hinh/2016/08/hinh-anh-mon-an-ngon-pho-2.jpg" width="300" height="200">
+		<img src="https://chupanhmonan.net/wp-content/uploads/2015/05/chup-anh-mon-an-food-photography-12.jpg" width="300" height="200">
+
+		<br>
+		<strong>This is strong</strong>
+		<br>
+		<p align="right"><i>this is i</i></p>
+		<br> example sup: 2<sup>3</sup>
+		<br>
+		<p align="center">this is<small> small</small></p>
+		
+		<br>
+		<br>
+		Danh sach cac phan tu
+		<ol type="i">
+			<li>pt1</li>
+			<li>pt2</li>
+			<li>pt3</li>
+			<li>pt4</li>
+		</ol>
+		<br>
+		Danh sach khong co thu tu
+		<ul type="square">
+			<li>pt1</li>
+			<li>pt2</li>
+			<li>pt3</li>
+			<li>pt4</li>
+		</ul>
+		<br><dl>
+				<dt>HTML</dt>
+				<dd> <font color="blue" site="32pt">This is document</font></dd>
+			</dl>
+		<pre>this                 is                 pre</pre>
+		<blockquote>this is blockquote</blockquote>
+
+		this is video
+
+		<video>
+			<source src="https://www.youtube.com/watch?v=g3CiMB6Ggdg" type="video/mp4" controls="controls" width="300" height="200">
+		</video>
+
+		<br>
+	</body>
+
+	</html>
+-->
+
+<!-- Buoi 2: form in html
+1. EX:
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>buoi 2</title>
+		</head>
+		<body >
+			<form name="frm" id="00" action="" method="">
+				< !-- <table border="1" width="300" height="200" cellpadding="2" cellspacing="3" bgcolor="blue">
+					<caption>This is caption table</caption>
+					<tr>
+						<th>Example</th>
+						<th>with</th>
+						<th>table</th>
+					</tr>
+					<tr>
+						<th>using th</th>
+						<td>using td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center" valign="">using</td>
+						<td>colspan</td>
+					</tr>
+					<tr>
+						<td rowspan="2">using rowspan</td>
+						<td>th the hien</td>
+						<td>tieu de cot</td>
+					</tr>
+					<tr>
+						<td>using td</td>
+						<td>td</td>
+					</tr>
+				</table> - ->
+				<table align="center">
+					<caption><strong>Learn form & table</strong></caption>
+					<tr>
+						<td>Username</td>
+						<td><input type="text" name="txtUser"></td>
+					</tr>
+					<tr>
+						<td>Pass</td>
+						<td><input type="password" name="txtpass"></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td><input type="radio" name="rdogender" value="nam">Nam
+								<input type="radio" name="rdogender" value="nu">Nu</td>
+					</tr>
+					<tr>
+						<td>Hobby</td>
+						<td>
+							<input type="checkbox" name="so_thich" value="cua">cua
+							<input type="checkbox" checked="true" name="so_thich" value="tom">tom
+							<input type="checkbox" name="so_thich" value="oc">oc
+							<input type="checkbox" name="so_thich" value="ca chim">ca chim
+							<input type="checkbox" name="so_thich" value="ca cham">ca cham
+						</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td><textarea name="txtAdd" cols="20" rows="1"></textarea></td>
+					</tr>
+					<tr>
+						<td>Example selection</td>
+						<td>
+							<select>
+								<option value="0" selected="true">ca</option>
+								<option value="1">ca</option>
+								<option value="2">ca</option>
+								<option value="3">ca</option>
+								<option value="4">ca</option>
+							</select>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>Example input file img</td>
+						<td><input type="file" name="txtimg" value="browes"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="submit" value="submit"></td>
+					</tr>
+				</table>
+			</form>
+		</body>
+	</html>
+-->
+
+<!-- Buoi 3: CSS= css rule = selecter(sinh nghia, quy tac cua css) + declaration block(sd de khai bao khoi thuoc tin cua css). 
+1. EX:
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Learn CSS</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="External_Style.css">
+		
+		<style type="text/css">
+			b{
+				text-align: right;
+				text-transform: uppercase;
+				background: yellow;
+			}
+		</style>
+
+	</head>
+	<body>
+	<!- - 	<h1><strong>What is this?</strong></h1><br>
+		
+		<strong style="text-decoration: underline;">Example:</strong><br><br>
+			selecter{<br>
+				//declaration block <br>
+				property: value; <br>
+			}<br><br>
+
+		<b>And </b> <p>Css gom 3 loai style la inline, internal va external</p> - ->
+
+		<table>
+			<caption style="font-size: 48px;"><strong>Bai Tap 1</strong></caption>
+			<tr>
+				<td>
+					<p>
+					Hãy định nghĩa CSS theo yêu cầu sau:<br>
+					- Định nghĩa đoạn văn 1: Chữ in nghiêng, font chữ Arial, căn giữa, kích cỡ font chữ
+					là 48px, gạch chân, chữ màu đỏ.</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-decoration: line-through; color: orange;">
+					- Định nghĩa đoạn văn 2: Chữ in đậm, font chữ Tahome, căn phải, kích cỡ font chữ
+					là36px, gạch ngang, chữ màu da cam. 
+				</td>
+			</tr>
+				<td>
+					<a href="http://dantri.com.vn">- Định nghĩa hyperlink đến trang Dân Trí, bỏ gạch chân.</a>
+					 <br>
+					Hãy định nghĩa style theo 3 cách: inline style, internal style, external style. <br>
+				
+				</td>
+				
+			</tr>
+		</table>
+		<br>
+		<table>
+			<caption style="font-size: 48px;"><strong>Bai tap 2</strong></caption>
+			<tr>
+				<td id="selecter_id">
+					Thoi gian cua cac ban la co han, nen dung phi pham bang cach song cuoc doi cua nguoi khac. Dung roi vao bay cua su doc doan, giao dieu cua nguoi khac. Dung de nhung y kien on ao xung quanh danh chim tieng noi ben trong ban. Va quan trin nhat, hay co dung camr de di theo tieng goi cua trai tim va linh tinh. Chung biet ban thuc su muon gi. Moi thu khac chi la thu yeu thoi.
+				</td>
+				<td>
+					<b>
+						Hãy dùng css để định nghĩa đoạn văn bản trên với yêu cầu sau: <br>
+						- Chuyển thành chữ in hoa. <br>
+						- Đặt màu nền là màu vàng. Căn lề văn bản bên phải.
+					</b>
+				</td>
+			</tr>
+		</table><br>
+		<h3 class="class_selecter">This is <i class="class_selecter">class_selecter</i></h3>
+		<br>
+		
+		<div>
+			<img src="https://hinhanhdephd.com/wp-content/uploads/2015/12/hinh-anh-dep-girl-xinh-hinh-nen-dep-gai-xinh.jpg" class="img" "></img>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>
+				</div>
+				<div class="col-md-3">
+					col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>
+				</div>
+				<div class="col-md-3">
+					col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>
+				</div>
+				<div class="col-md-3">
+					col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>col-md-3 <br>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
+-->
+
+<!-- Buoi 4: SD dream
+	1 Giao dien co ban bao gom 5 the div
+		thuoc tinh position, clear
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Div in HTML</title>
+
+	<link rel="stylesheet" type="text/css" href="External_Style.css">
+
+ </head>
+ <body>
+ 	<div id="wrapper">
+ 		<div id="banner"> <br>
+ 			<p align="center" style="font-size: 48px;"><b>This is Banner</b></p>
+ 		</div>
+ 		
+ 		<div id="navi">
+ 			<ul>
+ 				<li><a href="mta.edu.vn" target="_bank">Trang chu</a></li>
+ 				<li><a href="24h.com.vn">Tin tuc</a></li>
+ 				<li><a href="#">Giao duc</a></li>
+ 				<li><a href="tuyensinh247.com">Tuyen sinh</a></li>
+ 				<li><a href="fit.mta.edu.vn">Dao tao</a></li>
+ 			</ul>
+ 		</div>
+ 		
+ 		<div id="menu"> 
+ 			<p align="center" v style="font-size: 48px;">This is Menu</p> 
+ 		</div>
+ 		
+ 		<div id="content">
+ 			<div style="width: 80%; height: 100%; float: left;">
+ 				<p align="center" style="font-size: 48px;"><b>This is content</b></p>
+ 			</div>
+ 			<div id="sidebar"><p align="center" v style="font-size: 48px;">This is sidebar</p></div>
+ 		</div>
+
+ 		<div id="footer"><br>
+ 			<p align="center" style="color: white;">My name is NGUYEN VAN LOC <br> ADD: HA NOI <br> CONTACT: 01653237025</p>
+ 		</div>
+ 	</div>
+ </body>
+ </html>
+ -->
+
+<!-- Buoi 5: JS: ngon ngu kich ban
+1. ly thuyet:
+	khai bao bien: var nameVal;
+				   nameVal = "aaa";
+	Bat loi form voi JS
+
+	mot so ham co ban: isNaN(): ktra...
+						parseInt(): convert to Int
+						prompt('loi nhac', 'thon diep') : dislay
+						confirm('thong diep')
+						alert(): thong bao
+	=== : so sanh type
+2. example:
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Learn JS</title>
+		<meta charset="utf-8">
+
+
+		<style type="text/css">
+			#widthtd{
+				width: 100px;
+			}
+
+		</style>
+
+		<script type="text/javascript">
+			function checkform() {
+				var ht= document.forms['frm1'].txthoten.value;// lay gia tri cua txt
+				if (ht!= "") {
+					alert("I am an alert box!");
+				}
+				else{
+					alert("Err!!!");
+					document.forms[0].txtht.focus();//dat controls vao txt err
+					return;
+				}
+				//ktra radio
+				if (document.all.rdosex[0].checked == false && document.all.rdosex[1].checked == false) {
+					alert('ban phai chon gioi tinh');
+					document.all.rdosex[0].focus();//dat controls vao txt err
+					return;
+				}//tuong tu voi checkbox
+
+				// ktra tuoi
+				var tuoi= document.forms['frm1'].txttuoi.value;
+				if (isNaN(tuoi)) {
+					alert('ban phai nhap so!');
+					document.forms[0].txttuoi.focus();
+					return;
+				}
+
+				//chuyen chuoi thanh so nguyen
+				var age = parseInt(tuoi);
+				if(age < 1 || age > 100) {
+					alert('Tuổi phải nằm trong khoảng 1 - 100 !');
+					document.forms[0].txttuoi.focus();
+					return;
+				}
+
+				// //submit form
+				// document.forms['frm1'].action='';
+				// document.forms['frm1'].submit();
+			}
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<form name="frm1">
+				<table border="0" width="300">
+					<tr>
+						<td colspan="2" align="center"><strong>Form dang ky</strong></td>
+					</tr>
+					<tr>
+						<td id="widthtd" >Ho Ten</td>
+						<td><input type="text" name="txthoten" style="width: 100%;"></td>
+					</tr>
+					<tr>
+						<td id="widthtd">Tuoi</td>
+						<td><input type="text" name="txttuoi" style="width: 100%;"></td>
+					</tr>
+					<tr>
+						<td id="widthtd">Gioi tinh</td>
+						<td>
+							<input type="radio" name="rdosex" id="radio">Nam
+							<input type="radio" name="rdosex" id="radio2">Nu
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="button" name="button" value="LogIn" id="btnLogin" onclick="checkform()">
+							<input type="reset" name="reset" value="Register" id="btnRegister">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+	</html>
+-->
+
+<!-- buoi 6: cau truc dieu kien & vong lap
+1. ly thuyet:
+	break: ket thuc lenh
+		   ket thuc vong lap
+	default: thuc hien khi cac khoi lenh khong thoa man( tuong tu else).
+	return: thoat khoi ham va tra ve gia tri cua ham.
+	continue: bo qua lenh.
+
+	su kien trong JS:
+		html DOM Events: phan tich va to chuc cac tai lieu html, xml theo cau truc duyet cay.
+		document.getElementById('name_id'): truy cap phan tu bat ky theo id.
+		onload
+		onchange
+		onmouseover, onmouseout, onmousemove, onmousedown, onmouseup
+		onfocus, onblur, onresize, onsubmit
+2. EX:
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Learn JS Events</title>
+
+		<script type="text/javascript" >
+			
+			document.getElementById("btn").onclick = function dislayDate() {
+				document.getElementById('demo').innerHTML= Date();
+				// alert('Errr!');
+			}
+
+			function myOnload(){
+				alert('This is message!')
+			}
+			
+		</script>
+	</head>
+	<body onload="myOnload()">
+		
+		<h1 onclick="this.innerHTML='Events JS: onclick!'">This is innerHTML!</h1>
+
+		<button id="btn">try it</button>
+		<p id="demo">This is document.getElementById('name_id')</p>
+
+		<!-- <button type="button" onclick=document.getElementById('demo2').innerHTML=Date()>click me to display date and time.</button> -->
+		<!-- <p id="demo2"></p> - ->
+	</body>
+	</html>
+-->
+
+<!-- Buoi 7: JQuery
+1. Lý thuyết:
+	using: document.ready()
+
+	$(document).ready(function(){
+		//code here
+	});
+
+	//lớp giả của css
+
+	một số hàm cơ bản: html(), remove(), after(), val(), empty(), append(), before(), attr(),text(), prepend()
+	
+2. Exam:
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Learn JQuery</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			list_size = $('.slider-wrapper ul li').length;
+			current =0;
+			console.log(list_size);
+			$('.btn-next').click(function(){
+				if(list_size>=2){
+					$('.slider-wrapper ul li').eq(list_size-1).animate({
+					'width': '0','height':'0'},'slow',function(){
+					$(this).hide();
+					});
+					list_size-=1;
+					console.log(list_size);
+				}
+			})
+
+		$('.btn-prev').click(function(event) {
+			if(list_size<5){
+				$('.slider-wrapper ul li').eq(list_size).animate({
+					'width': '500px','height':'200px'},'slow',function(){
+						$(this).show();
+					});
+				list_size+=1;
+			console.log(list_size);
+		}
+		//current = list_size-1;
+		});
+		});
+	</script>
+	  <style type="text/css">
+	  	/*.elen{
+	  		width: 500px; height: 500px; position: absolute; background: red;
+	  	}
+	  	.btn{
+	  		position: absolute;
+	  	}*/
+	  	.slider-wrapper{
+	  		width: 500px;
+	  		position: relative;
+	  		margin: 100px/*top*/ auto;/*đưa ra giữa màn hình*/
+	  	}
+
+	  	.slider-wrapper li{
+	  		list-style-type: none;
+	  		position: absolute;/*chèn ảnh chồng lên nhau*/
+	  	}
+	  	.slider-wrapper ul{
+	  		margin: 0px;
+	  		padding: 0px;
+	  		position: relative;
+	  	}
+	  	.slider-wrapper img{
+	  		width: 500px;
+	  		height: 200px;
+	  	}
+
+	  	.slider-wrapper .btn-prev{
+	  		color: #00fdff61;
+	  		font-size: 30px;
+	  		position: absolute;
+	  		top: 85px;
+	  		left: 0px;
+	  		z-index: 100;
+	  	}
+	  	
+	  	.slider-wrapper .btn-next{
+	  		color: #00fdff61;
+	  		font-size: 30px;
+	  		position: absolute;
+	  		top: 85px;
+	  		right: 0px;
+	  		z-index: 100;
+	  	}
+
+	  </style>
+	</head>
+	<body>
+		<div class="slider-wrapper">
+			<i class="fa fa-arrow-circle-left btn-prev" aria-hidden="true"></i>
+			<ul>
+				<li>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRUAw0HcxEZPm8MszHiaYlfFspctjw3xAs1xBma-8M5hMpKQJE">
+				</li>
+				<li>
+					<img src="http://factinteres.ru/wp-content/uploads/2016/09/IMG-Worlds-of-Adventure-1-945x776.jpg">
+				</li>
+				<li>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9fmXKgrxgFQrNINam14ncIwM8A5mVprFPZhmUKrTZFmeHSZN">
+				</li>
+			</ul>
+			<i class="fa fa-arrow-circle-right btn-next" aria-hidden="true"></i>
+		</div>
+	</body>
+	</html>
+-->
+
+<!-- Buoi 8: Bootstrap 
+1. Lý thuyết:
+	grid:
+		xs: for phone
+		sm: for tablets
+		md: laptop
+		lq: laptop big :V
+2. Exam:
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Demo Bootstrap</title>
+		<! -- Latest compiled and minified CSS - ->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/…/3.3…/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+
+		<! -- Latest compiled and minified JavaScript - ->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/…/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+		<div class="container wrapper">
+			<div class="menu-wrapper"></div>
+			<!- -end menu- ->
+
+			<div class="slider-wrapper"></div>
+			<! --end main slider- ->
+
+			<div class="row main-content">
+				<div class="col-sm-12 col-md-8 content-wrapper"></div>
+				<div class="col-md-4 col-sm-12 sidebar"></div>
+				</div>
+				<! --end main cointent- ->
+
+				<div class="footer row">
+				<div class="col-md-4 col-sm-12"></div>
+				<div class="col-md-4 col-sm-12"></div>
+				<div class="col-md-4 col-sm-12"></div>
+			</div>
+		<! -- end footer- ->
+		</div>
+		 end wrapper- ->
+
+	</body>
+	</html>
+-->
+
+<!-- Buoi 9: Test 1 -->
+<!-- BUổi 10: Java Core -->

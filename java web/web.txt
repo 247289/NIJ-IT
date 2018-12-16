@@ -1,0 +1,12 @@
+
+kiến trúc web: khách-chủ(client-server)
+mô hình xử lý: requests-reponse
+
+1. Servlet(Nhúng mã giao diện vào java)
+	có 2 thư viện là: javax.servlet và javax.servlet.http
+	điểm mạnh: xử lý các yêu cầu
+	điểm yếu : GUI => JSP
+
+2. JSP( java server pages):
+	điểm mạnh: GUI
+	điểm yếu : xử lý 

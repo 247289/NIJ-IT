@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BTVN</title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		function div7() {
+			var i =10;
+			var print='ket qua: ';
+			do{
+				if (i%7==0) {
+					// document.write("<BR>i = " + i + "<BR>");
+					print+= i + ' ; ';
+				}
+				i+=1;
+			}while(i<71);
+			document.getElementById("div7").innerHTML = print;
+		}
+
+
+	</script>
+
+</head>
+<body>
+	<div>
+		<p>
+			<ul>
+				<b>B1: do{}while(); 10->70 in ra so chia het cho 7 </b>
+				<li style=";list-style-type: none;">
+					<p id="div7" onclick="div7()">show</p>
+				</li>
+			</ul>
+		</p>
+		<p>
+			<ol>
+				<b>B2</b>
+				<li>
+					Viết một chương trình  cho phép in ra tổng của các số nguyên nằm trong khoảng từ 200-600 và chia hết cho 3.
+				</li>
+				<li>
+					Viết một chương trình  cho phép in ra các số nguyên nằm trong khoảng từ 50-100 và chia hết cho 7.
+				</li>
+			</ol>
+		</p>
+		<p>
+			<ol>
+				<b>B3</b>
+				<li>
+					Hãy viết chương trình  cho phép tính và in ra tổng của 100 số nguyên đầu tiên (1-100), dùng vòng lặp While.
+				</li>
+				<li>
+					Viết chương trình có sử dụng vòng lặp While cho phép in ra những số chia hết cho 3 trong khoảng từ 20-50
+				</li>
+			</ol>
+		</p>
+		<p>
+			<ol>
+				<b>B4</b>
+				<li>
+					Viết một trang web cho phép thực hiện một vòng lặp tính tổng và tổng bình phương của 100 số nguyên đầu tiên.  
+					<ul>
+						<li>a. Sửa đổi vòng lặp vừa tạo: Vòng lặp sẽ kết thúc khi biến đếm đạt đến giá trị 50.</li>
+						<li>b. Sửa đổi vòng lặp vừa tạo: Vòng lặp sẽ bị bỏ qua những câu lệnh còn lại khi biến đếm đạt đến giá trị 70.</li>
+					</ul>
+				</li>
+			</ol>
+		</p>
+	</div>
+</body>
+</html>
